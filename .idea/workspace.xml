@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7d94f1df-4e4a-4a18-be98-909d9224f44f" name="Changes" comment="Done.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mp/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mp/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mp/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mp/Server.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +54,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Server">
+  <component name="RunManager" selected="Application.Client">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.mp.Client" />
       <module name="mpMessanger" />
@@ -112,7 +114,7 @@
       <workItem from="1677174753237" duration="2675000" />
       <workItem from="1677236123914" duration="7604000" />
       <workItem from="1677610725101" duration="2805000" />
-      <workItem from="1677693306622" duration="8097000" />
+      <workItem from="1677693306622" duration="10418000" />
     </task>
     <task id="LOCAL-00001" summary="Done.">
       <created>1677153844970</created>

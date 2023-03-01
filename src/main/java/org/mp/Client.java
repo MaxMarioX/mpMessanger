@@ -5,7 +5,8 @@ import java.io.*;
 
 public class Client {
 
-   // private static final int PORT_TCP = 62231;
+    private static String SERVER_IP = "127.0.0.1";
+    private static int PORT_TCP = 62231;
 
     private Socket clientSocket;
     private PrintWriter output;
@@ -13,7 +14,11 @@ public class Client {
 
     public void start(String ip, int port) {
         try {
+            log("Client starting...");
+            log("Client started");
+            log("Connecting with "+ SERVER_IP + ":" + PORT_TCP + " ...");
             clientSocket = new Socket(ip, port);
+            log("Connected with "+ SERVER_IP + ":" + PORT_TCP);
             output = new PrintWriter(clientSocket.getOutputStream(), true);
             input = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
         } catch (IOException e) {
@@ -35,9 +40,14 @@ public class Client {
             input.close();
             output.close();
             clientSocket.close();
+            log("Client stopped");
         } catch (IOException e) {
             System.out.println("Oops! Something went wrong when closing connection! :(");
         }
+    }
+
+    public void log(String message) {
+        System.out.println(message);
     }
 
     public void logSend(String message) {
@@ -50,9 +60,7 @@ public class Client {
 
     public static void main(String[] args) {
         Client client = new Client();
-        client.start("127.0.0.1", 62231);
-        String a = client.send("Hi!");
-        client.logReceive(a);
+        client.start(SERVER_IP, PORT_TCP);
         client.stop();
     }
 
