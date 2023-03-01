@@ -2,12 +2,12 @@ package org.mp.Security;
 
 import java.security.*;
 
-public class rsaGenerator {
+public class RSAGenerator {
 
     private PrivateKey privateKey;
     private PublicKey publicKey;
 
-    public rsaGenerator() throws NoSuchAlgorithmException {
+    public RSAGenerator() throws NoSuchAlgorithmException {
         KeyPairGenerator keyPairGenerator = KeyPairGenerator.getInstance("RSA");
         keyPairGenerator.initialize(2048);
 

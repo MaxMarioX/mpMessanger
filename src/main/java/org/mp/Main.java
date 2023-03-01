@@ -1,9 +1,15 @@
 package org.mp;
 
+
+
+import org.mp.Security.RSAGenerator;
+import org.mp.Security.RSAUtil;
+
 import javax.crypto.BadPaddingException;
 import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.NoSuchPaddingException;
 import java.io.IOException;
+import java.net.Socket;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.util.Base64;
@@ -12,7 +18,9 @@ public class Main {
     public static void main(String[] args) throws NoSuchAlgorithmException, IOException {
 
         /*
-        RSAgenerator rsa = new RSAgenerator();
+
+        RSAGenerator rsa = new RSAGenerator();
+        RSAGenerator r = new RSAGenerator();
 
         rsa.writeToFile("D:\\OneDrive\\Pulpit\\privateKey.key", rsa.getPrivateKey().getEncoded());
         rsa.writeToFile("D:\\OneDrive\\Pulpit\\publicKey.key", rsa.getPublicKey().getEncoded());
@@ -22,7 +30,7 @@ public class Main {
 
 
         try {
-            RSAgenerator rsAgenerator = new RSAgenerator();
+            RSAGenerator rsAgenerator = new RSAGenerator();
             RSAUtil rsaUtil = new RSAUtil();
 
             byte[] encrypted_message = rsaUtil.encrypt("MARIUSZ ARTYSTA", Base64.getEncoder().encodeToString(rsAgenerator.getPublicKey().getEncoded()));
@@ -37,6 +45,8 @@ public class Main {
         } catch (NoSuchAlgorithmException | BadPaddingException | IllegalBlockSizeException | InvalidKeyException |
                  NoSuchPaddingException e) {
         }
-        */
+
+
+         */
     }
 }
